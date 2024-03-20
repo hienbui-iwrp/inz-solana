@@ -1,0 +1,20 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+inz-mkp = "syX5i3s8c8aGXaESjcvv9xxhqVq267yG35HNtEGrxZ9"
+inz_creator = "HjN7BXTYoq6pw9Jc7VvVotR1RGk4NRWe9ehQZWi8bu5V"
+inz_mkp = "syX5i3s8c8aGXaESjcvv9xxhqVq267yG35HNtEGrxZ9"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Devnet"
+wallet = ".wallets/master.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
